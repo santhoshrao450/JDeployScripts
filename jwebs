@@ -1,0 +1,1 @@
+/was/app/scripts/WASDEPLOY/scripts/jenkinsAppDeploy.sh "migng-0.0.1-SNAPSHOT_war" "/var/tmp/migng-0.0.1-SNAPSHOT.war"
