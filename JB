@@ -1,0 +1,12 @@
+/opt/jboss/bin/jboss-cli.sh -c controller="originations" --user=$UserName --password=$password --command="undeploy ****.war --server-groups=$SERVER_GROUP" && \
+/opt/jboss/bin/jboss-cli.sh -c controller="originations" --user=$UserName --password=$password --command="deploy target/****.war --server-groups=$SERVER_GROUP" || \
+/opt/jboss/bin/jboss-cli.sh -c controller="originations" --user=$UserName --password=$password --command="deploy target/*****.war --server-groups=$SERVER_GROUP"
+
+
+
+Dev
+CONTROLLER=*******:9990
+SERVER_GROUP=******
+/opt/jboss/bin/jboss-cli.sh -c controller=$CONTROLLER --user=$USERNAME_JBOSS_DEV --password=$PASSWORD_JBOSS_DEV --command="undeploy *****-1.1.war --server-groups=$SERVER_GROUP" && \
+/opt/jboss/bin/jboss-cli.sh -c controller=$CONTROLLER --user=$USERNAME_JBOSS_DEV --password=$PASSWORD_JBOSS_DEV --command="deploy target/***-1.1.war --server-groups=$SERVER_GROUP" || \
+/opt/jboss/bin/jboss-cli.sh -c controller=$CONTROLLER --user=$USERNAME_JBOSS_DEV --password=$PASSWORD_JBOSS_DEV --command="deploy target/*****-1.1.war --server-groups=$SERVER_GROUP"
